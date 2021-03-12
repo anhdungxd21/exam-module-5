@@ -1,0 +1,23 @@
+<h4>Thêm sách mới</h4>
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <table>
+    <tr>
+      <td>Tên sách:</td>
+      <td><input type="text" name="title" ngModel></td>
+    </tr>
+    <tr>
+      <td>Tác giả:</td>
+      <td><input type="text" name="author" ngModel></td>
+    </tr>
+    <tr>
+      <td>Mô tả:</td>
+      <td><textarea name="description" cols="30" rows="10" ngModel></textarea></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Thêm danh sách</button>
+      <button routerLink='/'>Cancel</button></td>
+    </tr>
+  </table>
+</form>
+

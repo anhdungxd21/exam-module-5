@@ -1,0 +1,22 @@
+<h4>Chi tiết sách</h4>
+<button routerLink="/">Xem danh sách</button>
+<br>
+<table>
+  <tr>
+    <td>Tên sách:</td>
+    <td>{{book.title}}</td>
+  </tr>
+  <tr>
+    <td>Tác giả:</td>
+    <td>{{book.author}}</td>
+  </tr>
+  <tr>
+    <td>Mô tả:</td>
+    <td>{{book.description}}</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><button (click)="deleteBook()">Xóa sách</button>
+    <button routerLink="/">Thoát</button></td>
+  </tr>
+</table>
